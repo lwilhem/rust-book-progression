@@ -1,0 +1,11 @@
+{
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+  },
+  "rust-analyzer.rustfmt.extraArgs": ["--config", "tab_spaces=2"],
+  "rust-analyzer.linkedProjects": [
+    "./hello_cargo/Cargo.toml",
+    "./guessing_game/Cargo.toml"
+  ]
+}
