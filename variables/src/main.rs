@@ -15,6 +15,7 @@ fn main() {
   print_hours();
   shadowed_x();
   array_example();
+  loop_label();
 }
 // here, x can change because it is marked as mutable, compiler is ok
 
@@ -80,4 +81,27 @@ fn array_example() {
   // it's normal behavior to forbid unpredicted memory access
 
   println!("The value of the element at index {index} is: {element}");
+}
+
+fn loop_label() {
+  let mut count = 0;
+
+  'counting_up: loop {
+    println!("count = {count}");
+    let mut remaining = 10;
+
+    loop {
+      println!("remaining = {remaining}");
+      if remaining == 9 {
+        break;
+      } else {
+        if count == 2 {
+          break 'counting_up;
+        }
+        remaining -= 1;
+      }
+      count += 1
+    }
+  }
+  println!("End count = {count}");
 }
