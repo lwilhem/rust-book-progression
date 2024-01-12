@@ -8,6 +8,8 @@
     "./hello_cargo/Cargo.toml",
     "./guessing_game/Cargo.toml",
     "./variables/Cargo.toml",
-    "./control_flow/Cargo.toml"
+    "./control_flow/Cargo.toml",
+    "./ownership/Cargo.toml",
+    "./borrowing/Cargo.toml"
   ]
 }
