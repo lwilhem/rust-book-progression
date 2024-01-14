@@ -10,6 +10,7 @@
     "./variables/Cargo.toml",
     "./control_flow/Cargo.toml",
     "./ownership/Cargo.toml",
-    "./borrowing/Cargo.toml"
+    "./borrowing/Cargo.toml",
+    "./rectangles/Cargo.toml"
   ]
 }
