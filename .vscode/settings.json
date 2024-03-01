@@ -11,6 +11,7 @@
     "./control_flow/Cargo.toml",
     "./ownership/Cargo.toml",
     "./borrowing/Cargo.toml",
-    "./rectangles/Cargo.toml"
+    "./rectangles/Cargo.toml",
+    "./enum_pattern/Cargo.toml"
   ]
 }
