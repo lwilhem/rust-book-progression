@@ -1,18 +1,18 @@
+fn main() {
+  let four = IpAddrKind::V4(String::from("127.0.0.1"));
+  let six = IpAddrKind::V6(String::from(":1"));
+
+  router(&four);
+  router(&six)
+}
+
+fn router(ip_addr: &IpAddrKind) {
+  println!("{:#?}", ip_addr)
+}
+
 #[derive(Debug)]
-enum IPAddrKind {
+#[allow(dead_code)]
+enum IpAddrKind {
   V4(String),
   V6(String),
-}
-
-fn main() {
-  println!("Hello, world!");
-  let home = IPAddrKind::V4(String::from("127.0.0.1"));
-  let loopback = IPAddrKind::V6(String::from("::1"));
-
-  router(&home);
-  router(&loopback)
-}
-
-fn router(ip_kind: &IPAddrKind) {
-  println!("{:#?}", ip_kind)
 }
